@@ -33,7 +33,7 @@ current_month = datetime.datetime.now().month
 current_year = datetime.datetime.now().year
 
 # Streamlit UI
-st.title("Income & Expense Tracker")
+st.title("Monthly Income & Expense Tracker")
 
 # st.header("Summary")
 st.write(f"**Total Income:** ${total_income['Amount'].sum():.2f}")
