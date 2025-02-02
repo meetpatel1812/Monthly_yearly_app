@@ -59,7 +59,7 @@ monthly_expense_value = monthly_expenses["Amount"].sum()
 
 st.write(f"**Monthly Income ({selected_month}/{selected_year}):** ${monthly_income_value:.2f}")
 st.write(f"**Monthly Expense ({selected_month}/{selected_year}):** ${monthly_expense_value:.2f}")
-st.write(f"**Monthly Saving ({selected_month}/{selected_year}):** ${monthly_expense_value:.2f}")
+st.write(f"**Monthly Saving ({selected_month}/{selected_year}):** ${monthly_expense_value:.2f - monthly_expense_value:.2f}")
 st.markdown("---")
 
 st.header("Monthly Transactions")
