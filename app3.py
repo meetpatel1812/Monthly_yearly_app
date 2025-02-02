@@ -57,9 +57,9 @@ monthly_expenses = expenses[(pd.to_datetime(expenses["Date"]).dt.month == select
 monthly_income_value = monthly_pay_income["Amount"].sum() + monthly_other_income["Amount"].sum()
 monthly_expense_value = monthly_expenses["Amount"].sum()
 
-st.write(f"**Monthly Income ({selected_month}):** ${monthly_income_value:.2f}")
-st.write(f"**Monthly Expense ({selected_month}):** ${monthly_expense_value:.2f}")
-st.write(f"**Monthly Saving ({selected_month}):** ${monthly_expense_value:.2f}")
+st.write(f"**Monthly Income ({selected_month}/{selected_year}):** ${monthly_income_value:.2f}")
+st.write(f"**Monthly Expense ({selected_month}/{selected_year}):** ${monthly_expense_value:.2f}")
+st.write(f"**Monthly Saving ({selected_month}/{selected_year}):** ${monthly_expense_value:.2f}")
 st.markdown("---")
 
 st.header("Monthly Transactions")
