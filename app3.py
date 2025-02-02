@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
+import time
 
 # File storage paths
 PAY_INCOME_FILE = "pay_income.csv"
@@ -172,3 +173,6 @@ if not selected_entry.empty:
         st.rerun()
 else:
     st.sidebar.warning("No matching entry found.")
+
+while True:
+    time.sleep(1)
