@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+streamlit-authenticator
+matplotlib
+openpyxl
+schedule
+sib_api_v3_sdk
+python-dotenv
+
