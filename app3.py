@@ -35,7 +35,7 @@ current_year = datetime.datetime.now().year
 # Streamlit UI
 st.title("Income & Expense Tracker")
 
-st.header("Summary")
+# st.header("Summary")
 st.write(f"**Total Income:** ${total_income['Amount'].sum():.2f}")
 st.write(f"**Total Expense:** ${total_expense['Amount'].sum():.2f}")
 st.markdown("---")
@@ -64,7 +64,7 @@ st.markdown("---")
 st.header("Monthly Transactions")
 
 # Display tables
-st.subheader("Pay Income (Monthly)")
+st.subheader("Pay Income ({}/{})".format(selected_month, selected_year))
 st.dataframe(monthly_pay_income)
 
 st.subheader("Other Income (Monthly)")
