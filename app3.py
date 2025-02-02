@@ -67,10 +67,10 @@ st.header("Monthly Transactions")
 st.subheader("Pay Income ({}/{})".format(selected_month, selected_year))
 st.dataframe(monthly_pay_income)
 
-st.subheader("Other Income (Monthly)")
+st.subheader("Other Income ({}/{})".format(selected_month, selected_year))
 st.dataframe(monthly_other_income)
 
-st.subheader("Expenses (Monthly)")
+st.subheader("Expenses ({}/{})".format(selected_month, selected_year))
 st.dataframe(monthly_expenses)
 
 st.markdown("---")
